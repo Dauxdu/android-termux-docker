@@ -135,7 +135,7 @@
   
   ```bash
   apk update && apk upgrade
-  apk add docker
+  apk add docker docker-cli-compose
   service docker start && service docker stop
   ```
   
@@ -153,7 +153,7 @@
   
   ## **14. Подключение к Docker из Termux**
   ```bash
-  pkg update && pkg install docker
+  pkg update && pkg install docker docker-compose
   ```  
   ```bash
   echo "export DOCKER_HOST=tcp://127.0.0.1:3001" >> ~/.bashrc
