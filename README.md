@@ -113,7 +113,7 @@
     -smp 2 \
     -m 1G \
     -device virtio-net,netdev=n1 \
-    -netdev user,id=n1,hostfwd=tcp::2222-:22,hostfwd=tcp::3001-:3001,hostfwd=tcp:8080-:8080 \
+    -netdev user,id=n1,hostfwd=tcp::2222-:22,hostfwd=tcp::3001-:3001,hostfwd=tcp::8080-:8080 \
     -drive if=pflash,format=raw,readonly=on,file=$PREFIX/share/qemu/edk2-x86_64-code.fd \
     -drive file=alpine.qcow2,if=virtio \
     -nographic" >> ~/alpine/run_qemu.sh
