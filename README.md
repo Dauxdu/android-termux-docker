@@ -8,7 +8,7 @@
   
   ```bash
   pkg update -y && pkg upgrade -y
-  pkg install wget qemu-utils qemu-common qemu-system-x86-64-headless root-repo docker -y
+  pkg install wget root-repo qemu-utils qemu-common qemu-system-x86-64-headless
   ```
   
   ---
@@ -152,7 +152,9 @@
   ---
   
   ## **14. Подключение к Docker из Termux**
-  
+  ```bash
+  pkg update && pkg install docker
+  ```  
   ```bash
   echo "export DOCKER_HOST=tcp://127.0.0.1:3001" >> ~/.bashrc
   source ~/.bashrc
